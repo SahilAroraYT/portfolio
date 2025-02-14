@@ -13,6 +13,7 @@ import {
 import "intersection-observer";
 import { useInView } from "react-intersection-observer";
 import { useView } from "@/contexts/ViewContext";
+import Typed from "typed.js";
 
 export default function Hero() {
   const handWaveAnimation = {
@@ -59,6 +60,31 @@ export default function Hero() {
 
   const rotate = useTransform(scrollYProgress, [0, 1], ["0deg", "-15deg"]);
 
+  // Create Ref element for typed.js
+  const typedRef = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(typedRef.current, {
+      strings: [
+        "Frontend Developer",
+        "Backend Developer",
+        "Full Stack Developer",
+        "Web Developer",
+        "Unity Game Developer",
+        "YouTuber",
+      ],
+      startDelay: 300,
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <section
       ref={ref}
@@ -95,9 +121,9 @@ export default function Hero() {
         >
           <p className="text-white/60 inline">I&apos;m </p>
           <span className="bg-gradient-to-br bg-clip-text text-transparent from-[#7CC0C4] via-[#548FBA] to-[#3C84C7]">
-            Adeola Badero
+            Sahil Arora
           </span>
-          <p>a Software Engineer</p>
+          <p>a <span ref={typedRef}></span></p>
         </motion.h1>
 
         <motion.p
@@ -105,12 +131,10 @@ export default function Hero() {
           animate={animateIn2}
           className="text-white/40  text-xl smm:text-2xl lg:text-3xl xl:text-4xl mt-3 smm:mt-6 "
         >
-          currently focused on building user experiences that drive growth.
         </motion.p>
       </div>
 
-      {/* IMAGE */}
-      <div data-blobity-tooltip="Soft man">
+      <div data-blobity-tooltip="Sahil Arora">
         <motion.div
           ref={imgRef}
           style={{ rotate }}
@@ -119,10 +143,10 @@ export default function Hero() {
           animate={animateIn1}
         >
           <Image
-            src="/transparent-ade-min.png"
+            src="/sahil-removed-bg.png"
             priority
             fill
-            alt="Ade's picture"
+            alt="Sahil's picture"
             className="bg-image-radial px-10 pt-20"
           />
         </motion.div>

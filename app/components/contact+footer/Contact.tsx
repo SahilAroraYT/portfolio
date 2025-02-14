@@ -115,7 +115,7 @@ export default function Contact() {
                 charSpace={"mr-[0.001em]"}
                 className="text-xl sm:text-2xl md:text-[32px] lg:text-[40px] font-bold"
               >
-                GOT A PROJECT IN MIND?
+                WANT TO HAVE A CHAT ?
               </AnimatedTitle>
               <Link href="#footer" data-no-blobity>
                 <span

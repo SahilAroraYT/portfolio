@@ -13,31 +13,40 @@ export default function Works() {
 
   const works = [
     {
-      title: "Offset Africa",
-      // gitLink: "https://github.com/adex-hub/url-shortening-api-landing",
-      liveLink: "https://offsetcomms.africa/",
+      title: "To-do List",
+      gitLink: "https://github.com/SahilAroraYT/ToDo-List-app-React-",
+      liveLink: "https://todo-try-react.vercel.app/",
       about:
-        "Offset Communications Africa’s website really allows them to stand out in the PR sector. It shows their works and case studies — highlighting their expertise and educating users about the company philosophy.",
-      stack: ["next.js", "typescript", "framer motion", "tailwindcss"],
-      img: "/offset-folio.svg",
+        "A React-based Todo List Application designed for efficient task management with a simple and user-friendly interface. It allows users to add, search, and delete tasks, with data persistence using LocalStorage. The app features a responsive design, unique task IDs via UUID, and UI enhancements using TailwindCSS and React Icons. ",
+      stack: ["React", "TailwindCSS", "UUID", "React icons"],
+      img: "/to-do.png",
     },
     {
-      title: "Shortly",
-      gitLink: "https://github.com/adex-hub/url-shortening-api-landing",
-      liveLink: "https://lnk-shortener.netlify.app/",
+      title: "BMX Impossible",
+      gitLink: "https://sahilarorayt.itch.io/bmx-impossible",
+      liveLink: "https://sahilarorayt.itch.io/bmx-impossible",
       about:
-        "A link shortener for a fictional company that effectively shortens links and stores them. No matter how many links you shorten, you can revisit the site anytime to view and manage your previously shortened links.",
-      stack: ["next.js", "typescript", "framer motion", "tailwindcss"],
-      img: "/shortly.svg",
+        "A simple single player game made with unity, player have to go across the map avoiding collisions with the obstacles. Player wins the game after crossing the finishing line",
+      stack: ["Unity Game Engine", "C#"],
+      img: "/bmx-impossible.png",
     },
     {
-      title: "Where in the world",
-      gitLink: "https://github.com/adex-hub/where-in-the-world",
-      liveLink: "https://where-in-the-world-ade.netlify.app/",
+      title: "Currency Converter",
+      gitLink: "https://github.com/SahilAroraYT/Currency-converter",
+      liveLink: "https://sahilarorayt.github.io/Currency-converter/",
       about:
-        "A fun tool for checking information about any country in the world such as the country’s native name, currency, population,  border countries etc. It features dynamic routing for each country and theme switch.",
-      stack: ["react", "react-router", "javascript", "tailwindcss"],
-      img: "/witw.svg",
+        "This project is a JavaScript-based currency converter that fetches exchange rates using APIs. It dynamically updates currency values and flags based on user selection, ensuring an interactive and user-friendly experience. The project showcases API integration, real-time data processing, and frontend interactivity, enhancing practical web development skills",
+      stack: ["HTML", "CSS", "JavaScript"],
+      img: "/currency-converter.png",
+    },
+    {
+      title: "Stone, Paper, Scissors",
+      gitLink: "https://github.com/SahilAroraYT/Stone-Paper-Scissors-Game",
+      liveLink: "https://sahilarorayt.github.io/Stone-Paper-Scissors-Game/",
+      about:
+        "Stone, Paper, Scissors game with user-friendly and fully responsive interface. It's a single player game that the player can play against the computer. The scores are displayed on the screen each time user picks its choice against the computer",
+      stack: ["HTML", "CSS", "JavaScript"],
+      img: "/stone-paper-scissors.png",
     },
     // {
     //   title: "Yourtodo",
@@ -49,13 +58,13 @@ export default function Works() {
     //   img: "/todo.svg",
     // },
     {
-      title: "Multi-step form",
-      gitLink: "https://github.com/adex-hub/multi-step-form-main",
-      liveLink: "https://ade-loremgaming.netlify.app/",
+      title: "Tic Tac Toe Game",
+      gitLink: "https://github.com/SahilAroraYT/Tic-Tac-Toe-Game",
+      liveLink: "https://tictactoe-original.netlify.app/",
       about:
-        "This site features a clean, user-friendly multi-step form for subscribing to a gaming service. Users input personal info, select a plan (monthly or yearly), choose add-ons (online service, larger storage, customizable profile), and review the summary before confirming.",
-      stack: ["html", "sass", "javascript", "ms clarity"],
-      img: "/multistep.svg",
+        "It is a simple Tic Tac Toe game with user-friendly interface which asks for Players' name and is played on a single device after the game displays the result",
+      stack: ["HTML", "CSS", "JavaScript",],
+      img: "/tic-tac-toe.png",
     },
   ];
 
@@ -86,8 +95,8 @@ export default function Works() {
           stack={work.stack}
         />
       ))}
-
-      <Timeline />
+        {/* Timeline below to be added when I have some experience */}
+      {/* <Timeline /> */}
     </section>
   );
 }

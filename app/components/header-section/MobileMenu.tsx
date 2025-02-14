@@ -52,7 +52,7 @@ export default function MobileMenu({
         <Link
           className="p-4 flex-1 flex justify-center w-full rounded-xl h-fit text-4xl visited:bg-[#E3D3BE] bg-gradient-to-r from-[#d9d9d915] to-[#7373731f] std-backdrop-blur"
           target="_blank"
-          href="https://linkedin.com/in/adeola-badero"
+          href="https://www.linkedin.com/in/sahil-arora-9279792b8/"
           data-blobity-radius="10"
         >
           <Icon icon="hugeicons:linkedin-01" />
@@ -62,7 +62,7 @@ export default function MobileMenu({
           <Link
             className="p-4 flex justify-center w-full rounded-xl h-fit text-2xl bg-gradient-to-r from-[#d9d9d915] to-[#7373731f] std-backdrop-blur"
             target="_blank"
-            href="https://github.com/adex-hub"
+            href="https://github.com/SahilAroraYT"
             data-blobity-radius="10"
           >
             <Icon icon="hugeicons:github" />
@@ -70,10 +70,10 @@ export default function MobileMenu({
           <Link
             className="p-4 flex justify-center w-full rounded-xl h-fit text-2xl bg-gradient-to-r from-[#d9d9d915] to-[#7373731f] std-backdrop-blur"
             target="_blank"
-            href="https://x.com/Ade_the_great"
+            href="https://www.instagram.com/sahilarorayt"
             data-blobity-radius="10"
           >
-            <Icon icon="akar-icons:x-fill" />
+            <Icon icon="mdi:instagram" />
           </Link>
         </div>
       </div>
