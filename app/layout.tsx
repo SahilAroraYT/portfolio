@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     title: "Sahil Arora — Portfolio",
     description:
       "Frontend Engineer formerly at Bluechip Technologies, passionate about crafting next-gen software and creative websites. I drive growth by crafting user experiences that blend aesthetics with functionality through my design and development skills. I thrive on turning ideas into seamless digital solutions.",
-    url: "https://www.adeolabadero.me",
-    siteName: "www.adeolabadero.me",
+    url: "https://sahilarora-portfolio.vercel.app/",
+    siteName: "https://sahilarora-portfolio.vercel.app/",
     images: [
       {
         url: "/SA.svg",
