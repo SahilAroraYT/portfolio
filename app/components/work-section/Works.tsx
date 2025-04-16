@@ -13,6 +13,15 @@ export default function Works() {
 
   const works = [
     {
+      title: "Fusion Chess",
+      gitLink: "https://github.com/SahilAroraYT/Fusion-Chess",
+      liveLink: "https://fusionchess.netlify.app/",
+      about:
+        "Fusion Chess is a modern web application built to simplify chess learning and streamline class bookings. Developed using the MERN stack (MongoDB, Express.js, React.js, Node.js), the platform delivers a clean, responsive UI powered by Tailwind CSS and DaisyUI. Instead of traditional user authentication, Calendly is integrated to handle class scheduling, allowing users to book sessions effortlessly without creating an account. The backend features RESTful APIs and MongoDB Atlas for structured data management. Fusion Chess reimagines online chess education by combining a seamless UI with smart scheduling and interactive content. ",
+      stack: ["React", "TailwindCSS", "DaisyUI", "Calendly"],
+      img: "/fusionchess.png",
+    },
+    {
       title: "To-do List",
       gitLink: "https://github.com/SahilAroraYT/ToDo-List-app-React-",
       liveLink: "https://todo-try-react.vercel.app/",
@@ -21,6 +30,7 @@ export default function Works() {
       stack: ["React", "TailwindCSS", "UUID", "React icons"],
       img: "/to-do.png",
     },
+    
     {
       title: "BMX Impossible",
       gitLink: "https://sahilarorayt.itch.io/bmx-impossible",
