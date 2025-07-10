@@ -68,7 +68,7 @@ export default function FolioCard({
               data-blobity-radius="34"
               data-blobity-magnetic="true"
               {...(!gitLink && {
-                "data-blobity-tooltip": "Privately owned by Offset",
+                "data-blobity-tooltip": "Privately owned by the organisation",
               })}
             >
               <Icon

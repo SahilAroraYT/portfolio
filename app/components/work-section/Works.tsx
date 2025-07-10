@@ -10,8 +10,16 @@ import Timeline from "./Timeline";
 
 export default function Works() {
   const { setSectionInView } = useView();
-
   const works = [
+     {
+      title: "Health Box",
+      gitLink: "https://github.com/SahilAroraYT/HealthBox-real",
+      liveLink: "https://healthbox-pbn4.onrender.com/",
+      about:
+        "Health Box is an AI-powered healthcare application that provides personalized medical assistance through symptom analysis and disease prediction. The platform features a comprehensive diagnostic system that analyzes user-reported symptoms using machine learning algorithms and Google's Gemini AI to deliver accurate health assessments, personalized treatment recommendations, and emergency assistance capabilities. This innovative solution combines advanced technology with medical knowledge to make healthcare more accessible and efficient for users.",
+      stack: ["HTML/CSS","Flask", "TailwindCSS", "Material UI", "SQLite", "SQLAlchemy", "NLTK", "OpenCV"],
+      img: "/healthbox.png",
+    },
     {
       title: "Fusion Chess",
       gitLink: "https://github.com/SahilAroraYT/Fusion-Chess",
@@ -20,6 +28,15 @@ export default function Works() {
         "Fusion Chess is a modern web application built to simplify chess learning and streamline class bookings. Developed using the MERN stack (MongoDB, Express.js, React.js, Node.js), the platform delivers a clean, responsive UI powered by Tailwind CSS and DaisyUI. Instead of traditional user authentication, Calendly is integrated to handle class scheduling, allowing users to book sessions effortlessly without creating an account. The backend features RESTful APIs and MongoDB Atlas for structured data management. Fusion Chess reimagines online chess education by combining a seamless UI with smart scheduling and interactive content. ",
       stack: ["React", "TailwindCSS", "DaisyUI", "Calendly"],
       img: "/fusionchess.png",
+    },
+    {
+      title: "Portfolio",
+      gitLink: "https://github.com/SahilAroraYT/portfolio",
+      liveLink: "https://sahilarora-portfolio.vercel.app/",
+      about:
+        "A modern, responsive portfolio website built with Next.js and React, showcasing my development skills and projects. The site features smooth animations, interactive elements, and a clean, professional design that highlights my work effectively.",
+      stack: ["Next.js", "TypeScript", "TailwindCSS", "Email.js", "Framer motion"],
+      img: "/portfolio.png",
     },
     {
       title: "To-do List",
@@ -58,15 +75,6 @@ export default function Works() {
       stack: ["HTML", "CSS", "JavaScript"],
       img: "/stone-paper-scissors.png",
     },
-    // {
-    //   title: "Yourtodo",
-    //   gitLink: "https://github.com/adex-hub/Yourtodo",
-    //   liveLink: "https://yourtodo-v1.vercel.app/",
-    //   about:
-    //     "This task management system lets you customize your name, add, delete, and edit tasks, and celebrates you when tasks are completed. It features built-in notifications and stores data in the browser, allowing you to resume tasks conveniently. Designed and developed by yours truly.",
-    //   stack: ["react", "javascript", "figma", "sass"],
-    //   img: "/todo.svg",
-    // },
     {
       title: "Tic Tac Toe Game",
       gitLink: "https://github.com/SahilAroraYT/Tic-Tac-Toe-Game",
