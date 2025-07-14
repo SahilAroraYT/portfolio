@@ -53,7 +53,7 @@ export default function About() {
           <Link
               className="underline"
               href={
-                "https://drive.google.com/file/d/1ZloK1f3HKoDIh7X3RGeFDt7F0ephurjW/view?usp=drive_link"
+                "https://drive.google.com/file/d/1mbbw0gI2OYSzmG4Pm5RczL1p4MB15DhD/view"
               }
             >
               <button 
@@ -76,11 +76,10 @@ export default function About() {
               charSpace={"mr-[0.001em]"}
               className="font-bold antialiased text-xl md:text-2xl mb-2"
             >
-              Frontend Tools
+              Languages
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              JavaScript(ES6+), React, Next.js, TypeScript, Python, Redux, Redux
-              Toolkit, React Query, HTML5, Git/GitHub, React Hook Form, Formik.
+              C/C++, JavaScript, TypeScript, Python
             </AnimatedBody>
           </div>
           <div>
@@ -89,10 +88,10 @@ export default function About() {
               charSpace={"mr-[0.001em]"}
               className="font-bold antialiased text-xl md:text-2xl mb-2"
             >
-              Backend Tools
+              Backend
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              Node.js, Express.js, Next.js
+              Node.js, Express.js, Next.js, Django, Flask
             </AnimatedBody>
           </div>
           <div>
@@ -101,10 +100,10 @@ export default function About() {
               charSpace={"mr-[0.001em]"}
               className="font-bold antialiased text-xl md:text-2xl mb-2"
             >
-              Database
+              Frontend
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              MongoDB, MySQL
+              HTML, CSS, TailwindCSS, Bootstrap, DaisyUI, React.js, Next.js
             </AnimatedBody>
           </div>
           <div>
@@ -113,11 +112,10 @@ export default function About() {
               charSpace={"mr-[0.001em]"}
               className="font-bold antialiased text-xl md:text-2xl mb-2"
             >
-              UI Libraries
+              Databases
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              CSS3, Tailwind CSS, Styled Components, Chakra UI, Framer
-              Motion, Bootstrap, Shadcn, Daisy UI.
+              MongoDB, MySQL, PostgreSQL
             </AnimatedBody>
           </div>
           <div>
@@ -126,10 +124,10 @@ export default function About() {
               charSpace={"mr-[0.001em]"}
               className="font-bold antialiased text-xl md:text-2xl mb-2"
             >
-              Design Tools
+              Developer Tools
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              Figma, Adobe Photoshop, UX Research, UI Design.
+              VS Code, Git, GitHub, Unity Game Engine
             </AnimatedBody>
           </div>
         </div>
