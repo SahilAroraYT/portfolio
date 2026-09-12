@@ -26,7 +26,7 @@ const socials = [
     label: "Email",
     href: `mailto:${profile.socials.email}`,
     icon: Mail,
-    accent: "hover:border-fuchsia-400/40 hover:text-fuchsia-300",
+    accent: "hover:border-cyan-400/40 hover:text-cyan-300",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function Contact() {
           <div className="glass relative overflow-hidden rounded-[2rem] p-10 text-center sm:p-16">
             <div
               aria-hidden
-              className="absolute -top-32 left-1/2 h-64 w-[32rem] -translate-x-1/2 rounded-full bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-fuchsia-500/20 blur-3xl"
+              className="absolute -top-32 left-1/2 h-64 w-[32rem] -translate-x-1/2 rounded-full bg-gradient-to-r from-cyan-500/20 via-sky-500/15 to-cyan-400/20 blur-3xl"
             />
 
             <div className="relative">
@@ -59,7 +59,7 @@ export default function Contact() {
               <div className="mt-10 flex flex-col items-center gap-5">
                 <a
                   href={`mailto:${profile.socials.email}`}
-                  className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 via-blue-500 to-violet-500 px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:shadow-xl hover:shadow-fuchsia-500/25 hover:brightness-110"
+                  className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-400 px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-400/25 hover:brightness-110"
                 >
                   <MessageCircleHeart className="h-4 w-4" />
                   Say Hello

@@ -18,7 +18,7 @@ export default function Education() {
         <div className="relative mx-auto mt-20 max-w-3xl">
           <div
             aria-hidden
-            className="absolute top-0 bottom-0 left-[22px] w-px bg-gradient-to-b from-violet-400/60 via-indigo-400/40 to-transparent"
+            className="absolute top-0 bottom-0 left-[22px] w-px bg-gradient-to-b from-cyan-400/60 via-cyan-400/25 to-transparent"
           />
 
           <ol className="space-y-12">
@@ -26,7 +26,7 @@ export default function Education() {
               <Reveal as="li" key={`${entry.degree}-${entry.school}`} delay={index * 110}>
                 <div className="relative pl-16">
                   <span
-                    className="absolute top-2 left-0 flex h-11 w-11 items-center justify-center rounded-full border border-violet-400/40 bg-violet-400/10 text-violet-300 backdrop-blur-md"
+                    className="absolute top-2 left-0 flex h-11 w-11 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-400/10 text-cyan-300 backdrop-blur-md"
                     aria-hidden
                   >
                     <GraduationCap className="h-4.5 w-4.5" />
@@ -43,7 +43,7 @@ export default function Education() {
                     </div>
 
                     <p className="mt-2 flex items-center gap-1.5 text-sm font-medium text-slate-300">
-                      <Award className="h-3.5 w-3.5 text-violet-300" />
+                      <Award className="h-3.5 w-3.5 text-cyan-300" />
                       {entry.score}
                     </p>
 

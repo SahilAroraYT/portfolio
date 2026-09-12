@@ -21,7 +21,7 @@ export default function About() {
             <div className="animate-float relative mx-auto max-w-sm">
               <div
                 aria-hidden
-                className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-br from-cyan-500/25 via-blue-500/15 to-fuchsia-500/20 blur-2xl"
+                className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-br from-cyan-500/25 via-sky-500/15 to-cyan-400/20 blur-2xl"
               />
               <div className="relative rounded-[2rem] border border-white/15 bg-gradient-to-b from-white/10 to-white/[0.02] p-3 backdrop-blur-xl">
                 <Image
@@ -56,7 +56,7 @@ export default function About() {
 
               <a
                 href="#contact"
-                className="mt-9 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 via-blue-500 to-violet-500 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:shadow-fuchsia-500/25 hover:brightness-110"
+                className="mt-9 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-400 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-400/25 hover:brightness-110"
               >
                 Let&apos;s work together
                 <ArrowRight className="h-4 w-4" />

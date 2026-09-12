@@ -17,8 +17,8 @@ export default function Home() {
         className="fixed inset-0 -z-10 overflow-hidden bg-background"
       >
         <div className="aurora-blob animate-aurora-1 -top-40 -left-32 h-[34rem] w-[34rem] bg-cyan-500/25" />
-        <div className="aurora-blob animate-aurora-2 top-1/3 -right-40 h-[38rem] w-[38rem] bg-violet-600/25" />
-        <div className="aurora-blob animate-aurora-3 -bottom-48 left-1/4 h-[32rem] w-[32rem] bg-fuchsia-600/15" />
+        <div className="aurora-blob animate-aurora-2 top-1/3 -right-40 h-[38rem] w-[38rem] bg-sky-500/20" />
+        <div className="aurora-blob animate-aurora-3 -bottom-48 left-1/4 h-[32rem] w-[32rem] bg-cyan-400/15" />
       </div>
 
       <div

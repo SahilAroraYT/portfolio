@@ -38,7 +38,7 @@ export default function Projects() {
                       />
                       <div
                         aria-hidden
-                        className="absolute inset-0 bg-gradient-to-t from-[#05070d]/80 via-transparent to-transparent"
+                        className="absolute inset-0 bg-gradient-to-t from-[#0f172a]/80 via-transparent to-transparent"
                       />
                     </div>
                   ) : (
@@ -72,7 +72,7 @@ export default function Projects() {
                             href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 rounded-lg border border-white/10 px-3 py-2 text-sm font-medium text-slate-300 transition-colors hover:border-fuchsia-400/40 hover:text-fuchsia-300"
+                            className="inline-flex items-center gap-1.5 rounded-lg border border-white/10 px-3 py-2 text-sm font-medium text-slate-300 transition-colors hover:border-cyan-400/40 hover:text-cyan-300"
                           >
                             Live Demo
                             <ArrowUpRight className="h-3.5 w-3.5" />

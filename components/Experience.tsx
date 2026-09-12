@@ -18,7 +18,7 @@ export default function Experience() {
         <div className="relative mx-auto mt-20 max-w-3xl">
           <div
             aria-hidden
-            className="absolute top-0 bottom-0 left-[22px] w-px bg-gradient-to-b from-cyan-400/60 via-indigo-400/40 to-transparent"
+            className="absolute top-0 bottom-0 left-[22px] w-px bg-gradient-to-b from-cyan-400/60 via-cyan-400/25 to-transparent"
           />
 
           <ol className="space-y-12">
@@ -29,7 +29,7 @@ export default function Experience() {
                     className={`absolute top-2 left-0 flex h-11 w-11 items-center justify-center rounded-full border backdrop-blur-md ${
                       entry.current
                         ? "border-cyan-400/50 bg-cyan-400/10 text-cyan-300"
-                        : "border-fuchsia-400/40 bg-fuchsia-400/10 text-fuchsia-300"
+                        : "border-slate-500/40 bg-slate-500/10 text-slate-400"
                     }`}
                     aria-hidden
                   >
@@ -64,7 +64,7 @@ export default function Experience() {
                           key={item.slice(0, 32)}
                           className="flex gap-3 text-sm leading-6 text-slate-400"
                         >
-                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-r from-cyan-400 to-violet-400" />
+                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-400/80" />
                           {item}
                         </li>
                       ))}

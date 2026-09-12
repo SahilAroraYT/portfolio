@@ -17,8 +17,8 @@ export default function Hero() {
         <div className="text-center lg:text-left">
           <p className="animate-fade-up inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300 backdrop-blur-md">
             <span className="relative flex h-2.5 w-2.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-              <span className="animate-pulse-ring relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75" />
+              <span className="animate-pulse-ring relative inline-flex h-2.5 w-2.5 rounded-full bg-cyan-400" />
             </span>
             {profile.availability}
           </p>
@@ -51,7 +51,7 @@ export default function Hero() {
           >
             <a
               href="#projects"
-              className="group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 via-blue-500 to-violet-500 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:shadow-xl hover:shadow-fuchsia-500/25 hover:brightness-110"
+              className="group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-400 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-400/25 hover:brightness-110"
             >
               <Sparkles className="h-4 w-4" />
               View My Work
@@ -73,7 +73,7 @@ export default function Hero() {
           <div className="animate-float relative">
             <div
               aria-hidden
-              className="animate-spin-slow absolute -inset-5 rounded-[2.5rem] bg-[conic-gradient(from_0deg,#22d3ee,#a78bfa,#e879f9,#22d3ee)] opacity-30 blur-2xl"
+              className="animate-spin-slow absolute -inset-5 rounded-[2.5rem] bg-[conic-gradient(from_0deg,#22d3ee,#0ea5e9,#38bdf8,#22d3ee)] opacity-30 blur-2xl"
             />
             <div className="relative rounded-[2rem] border border-white/15 bg-gradient-to-b from-white/10 to-white/[0.02] p-3 backdrop-blur-xl">
               <Image
@@ -92,8 +92,8 @@ export default function Hero() {
                   <p className="text-xs text-slate-400">{profile.title}</p>
                 </div>
                 <span className="relative flex h-2.5 w-2.5">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                  <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400" />
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75" />
+                  <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-cyan-400" />
                 </span>
               </div>
             </div>

@@ -13,7 +13,7 @@ export default function Footer() {
 
         <p className="flex items-center gap-1.5 text-sm text-slate-500">
           Designed &amp; built with
-          <Heart className="h-3.5 w-3.5 text-fuchsia-400" />
+          <Heart className="h-3.5 w-3.5 text-cyan-400" />
           by {profile.name}
         </p>
       </div>

@@ -87,10 +87,10 @@ export default function ChatBot() {
           <div className="relative flex items-center justify-between border-b border-white/10 px-5 py-4">
             <div
               aria-hidden
-              className="absolute inset-x-0 -top-10 h-24 bg-gradient-to-r from-cyan-500/15 via-blue-500/15 to-fuchsia-500/15 blur-2xl"
+              className="absolute inset-x-0 -top-10 h-24 bg-gradient-to-r from-cyan-500/15 via-sky-500/15 to-cyan-400/15 blur-2xl"
             />
             <div className="relative flex items-center gap-3">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-cyan-500/30 to-fuchsia-500/30 ring-1 ring-white/15">
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-cyan-500/30 to-sky-500/30 ring-1 ring-white/15">
                 <Bot className="h-4.5 w-4.5 text-cyan-300" />
               </span>
               <div>
@@ -124,7 +124,7 @@ export default function ChatBot() {
                 <div
                   className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-6 ${
                     message.role === "user"
-                      ? "bg-gradient-to-r from-cyan-600 to-violet-600 text-white rounded-br-md shadow-lg shadow-cyan-900/30"
+                      ? "bg-gradient-to-r from-cyan-600 to-cyan-500 text-white rounded-br-md shadow-lg shadow-cyan-900/30"
                       : "border border-white/10 bg-white/5 text-slate-200 rounded-bl-md"
                   }`}
                 >
@@ -137,8 +137,8 @@ export default function ChatBot() {
               <div className="flex justify-start">
                 <div className="flex items-center gap-1.5 rounded-2xl rounded-bl-md border border-white/10 bg-white/5 px-4 py-3">
                   <span className="h-2 w-2 animate-bounce rounded-full bg-cyan-400 [animation-delay:-0.3s]" />
-                  <span className="h-2 w-2 animate-bounce rounded-full bg-blue-400 [animation-delay:-0.15s]" />
-                  <span className="h-2 w-2 animate-bounce rounded-full bg-fuchsia-400" />
+                  <span className="h-2 w-2 animate-bounce rounded-full bg-cyan-300 [animation-delay:-0.15s]" />
+                  <span className="h-2 w-2 animate-bounce rounded-full bg-cyan-200" />
                 </div>
               </div>
             )}
@@ -168,7 +168,7 @@ export default function ChatBot() {
             <button
               type="submit"
               disabled={isLoading || !input.trim()}
-              className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-r from-cyan-500 to-violet-500 text-white transition-all hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-40"
+              className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-400 text-white transition-all hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-40"
               aria-label="Send message"
             >
               <Send className="h-4 w-4" />
@@ -180,12 +180,12 @@ export default function ChatBot() {
       <button
         type="button"
         onClick={() => setIsOpen((open) => !open)}
-        className="group fixed right-4 bottom-4 z-40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 via-blue-600 to-violet-600 text-white shadow-xl shadow-blue-900/40 transition-all duration-300 hover:scale-105 hover:shadow-fuchsia-900/40 sm:right-6 sm:bottom-6"
+        className="group fixed right-4 bottom-4 z-40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 via-cyan-600 to-sky-600 text-white shadow-xl shadow-cyan-950/40 transition-all duration-300 hover:scale-105 hover:shadow-cyan-900/40 sm:right-6 sm:bottom-6"
         aria-label={isOpen ? "Close chat" : "Open chat"}
       >
         <span
           aria-hidden
-          className="absolute -inset-1 rounded-full bg-gradient-to-br from-cyan-500/40 to-fuchsia-500/40 opacity-50 blur-lg transition-opacity group-hover:opacity-80"
+          className="absolute -inset-1 rounded-full bg-gradient-to-br from-cyan-500/40 to-sky-500/40 opacity-50 blur-lg transition-opacity group-hover:opacity-80"
         />
         <span className="relative">
           {isOpen ? (

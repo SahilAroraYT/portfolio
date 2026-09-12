@@ -21,7 +21,7 @@ export default function SectionHeading({
         <span className="h-px w-8 bg-gradient-to-r from-transparent to-cyan-400" />
         <span className="font-mono text-cyan-300">{index}</span>
         {eyebrow}
-        <span className="h-px w-8 bg-gradient-to-l from-transparent to-fuchsia-400" />
+        <span className="h-px w-8 bg-gradient-to-l from-transparent to-cyan-400" />
       </p>
       <h2 className="font-display text-4xl font-bold tracking-tight text-slate-50 sm:text-5xl">
         {title}{" "}

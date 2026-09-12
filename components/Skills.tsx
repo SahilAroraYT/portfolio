@@ -13,9 +13,9 @@ const marqueeSkills: SkillEntry[] = [
 ];
 
 const accentColors = [
-  "from-cyan-400/25 to-blue-500/10",
-  "from-violet-400/25 to-fuchsia-500/10",
-  "from-fuchsia-400/25 to-pink-500/10",
+  "from-cyan-400/25 to-sky-500/10",
+  "from-cyan-500/20 to-cyan-400/10",
+  "from-sky-400/20 to-cyan-500/10",
 ];
 
 export default function Skills() {
