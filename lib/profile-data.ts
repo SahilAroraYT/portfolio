@@ -157,6 +157,15 @@ export const profile: ProfileData = {
       link: "https://healthbox-pbn4.onrender.com/",
       image: "/health_box.png",
     },
+    {
+      name: "Fusion Chess",
+      description:
+        "Developed a modern and responsive website for Fusion Chess Academy, designed to establish the academy’s online presence and provide students and parents with easy access to information about its chess training programs. The website showcases the academy, its coaching programs, achievements, and other relevant information in a clean and engaging interface.The platform is designed to make it easy for prospective students and parents to explore the academy’s offerings, learn about its training approach, and connect with the academy. The project focuses on responsive design, intuitive navigation, modern UI, and a user-friendly experience across devices.",
+      tech: ["HTML/CSS", "JavaScript", "TypeScript","React", "Tailwind CSS", "Calendly"],
+      github: "https://github.com/SahilAroraYT/Fusion-Chess",
+      link: "https://fusionchess.netlify.app/",
+      image: "/fusion_chess.png",
+    },
   ],
 
   skills: {
