@@ -46,6 +46,7 @@ export type ProfileData = {
     instagram: string;
     email: string;
   };
+  resume: string;
   education: EducationEntry[];
   experience: ExperienceEntry[];
   projects: ProjectEntry[];
@@ -80,6 +81,8 @@ export const profile: ProfileData = {
     email: "sahilarorapersonal2003@gmail.com",
     instagram: "https://www.instagram.com/sahilarorayt"
   },
+
+  resume: "https://drive.google.com/file/d/1rV1C6WtkS0vv4OJS2GeBF-s5FBvBEzr-/view",
 
   education: [
     {

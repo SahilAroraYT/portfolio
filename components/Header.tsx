@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
+import { FileText, Menu, X } from "lucide-react";
 import { profile } from "@/lib/profile-data";
 
 const navItems = [
@@ -78,6 +78,15 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-3">
+          <a
+            href={profile.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-9 items-center gap-1.5 rounded-lg bg-gradient-to-r from-cyan-500 to-cyan-400 px-3.5 text-sm font-semibold text-white shadow-md shadow-cyan-500/25 transition-all duration-200 hover:brightness-110"
+          >
+            <FileText className="h-4 w-4" />
+            Resume
+          </a>
           <Image
             src={profile.avatar}
             alt={`${profile.name} profile photo`}
