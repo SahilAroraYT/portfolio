@@ -209,7 +209,7 @@ export const profile: ProfileData = {
   },
 
   quickFacts: [
-    "BTech — Computer Science Engineering",
+    "BTech - Computer Science Engineering",
     "Data Science Intern at Sun Foundation",
     "React, Next.js, Node.js, Python",
     "Ludhiana, Punjab, India",
