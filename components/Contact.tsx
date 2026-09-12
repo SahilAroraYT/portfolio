@@ -1,5 +1,5 @@
 import { Mail, MessageCircleHeart } from "lucide-react";
-import { GitHubIcon, LinkedInIcon, XIcon } from "./BrandIcons";
+import { GitHubIcon, InstagramIcon, LinkedInIcon } from "./BrandIcons";
 import { profile } from "@/lib/profile-data";
 import Reveal from "./Reveal";
 
@@ -16,11 +16,11 @@ const socials = [
     icon: LinkedInIcon,
     accent: "hover:border-blue-400/40 hover:text-blue-300",
   },
-  {
-    label: "Twitter / X",
-    href: profile.socials.twitter,
-    icon: XIcon,
-    accent: "hover:border-slate-400/40 hover:text-slate-200",
+{
+    label: "Instagram",
+    href: profile.socials.instagram,
+    icon: InstagramIcon,
+    accent: "hover:border-cyan-400/40 hover:text-cyan-300",
   },
   {
     label: "Email",

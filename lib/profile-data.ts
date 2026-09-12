@@ -43,7 +43,7 @@ export type ProfileData = {
   socials: {
     github: string;
     linkedin: string;
-    twitter: string;
+    instagram: string;
     email: string;
   };
   education: EducationEntry[];
@@ -78,7 +78,7 @@ export const profile: ProfileData = {
     github: "https://github.com/sahilarorayt",
     linkedin: "https://www.linkedin.com/in/sahil-arora-9279792b8/",
     email: "sahilarorapersonal2003@gmail.com",
-    twitter: ""
+    instagram: "https://www.instagram.com/sahilarorayt"
   },
 
   education: [
