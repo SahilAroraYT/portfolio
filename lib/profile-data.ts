@@ -55,24 +55,24 @@ export const profile: ProfileData = {
     "Software Developer",
     "Web & App Builder",
     "Problem Solver",
-    "Lifelong Learner",
+    "Content Creator",
   ],
   tagline:
     "I build web and mobile applications that solve real problems with clean, reliable code.",
   avatar: "/profile.png",
   location: "Ludhiana, Punjab, India",
-  availability: "Open to Opportunities",
+  availability: "Open to Opportunities",  
 
   about: [
     "I am a Software Developer based in Ludhiana, Punjab, passionate about building web and mobile applications that are fast, accessible, and a pleasure to use. My journey began with a BTech in Computer Science Engineering from Guru Nanak Dev Engineering College, Ludhiana.",
-    "I enjoy solving problems end-to-end — from understanding what a user actually needs, to designing the architecture, to shipping polished, production-ready products. I care deeply about code quality, performance, and the details that make software feel great.",
+    "I enjoy solving problems end-to-end - from understanding what a user actually needs, to designing the architecture, to shipping polished, production-ready products. I care deeply about code quality, performance, and the details that make software feel great.",
   ],
 
   socials: {
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
-    twitter: "https://twitter.com/yourusername",
-    email: "your.email@example.com",
+    github: "https://github.com/sahilarorayt",
+    linkedin: "https://www.linkedin.com/in/sahil-arora-9279792b8/",
+    email: "sahilarorapersonal2003@gmail.com",
+    twitter: ""
   },
 
   education: [
@@ -80,9 +80,9 @@ export const profile: ProfileData = {
       degree: "BTech in Computer Science Engineering",
       school: "Guru Nanak Dev Engineering College",
       location: "Ludhiana, Punjab",
-      duration: "20XX — 20XX",
+      duration: "2022 - 2026",
       description:
-        "Core computer science fundamentals — data structures, algorithms, operating systems, and software engineering.",
+        "Core computer science fundamentals - data structures, algorithms, operating systems, database management system and software engineering.",
     },
   ],
 

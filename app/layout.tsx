@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sahil Arora — Software Developer",
+  title: "Sahil Arora | Portfolio",
   description:
     "Portfolio of Sahil Arora, a Software Developer building web and mobile applications with React, Next.js, Node.js and Python.",
   keywords: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "Portfolio",
   ],
   openGraph: {
-    title: "Sahil Arora — Software Developer",
+    title: "Sahil Arora | Portfolio",
     description:
       "Portfolio of Sahil Arora, a Software Developer building web and mobile applications.",
     type: "website",
