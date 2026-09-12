@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { profile } from "@/lib/profile-data";
-import Typewriter from "./Typewriter";
 
 export default function Hero() {
   return (
@@ -36,7 +35,7 @@ export default function Hero() {
             className="animate-fade-up mt-6 text-xl font-medium text-slate-300 sm:text-2xl"
             style={{ animationDelay: "240ms" }}
           >
-            <Typewriter words={profile.roles} data-role="typewriter" />
+            I&apos;m a {profile.roles[0]}
           </p>
 
           <p
