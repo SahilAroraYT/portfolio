@@ -8,7 +8,7 @@ export default function Experience() {
     <section id="experience" className="relative scroll-mt-24 py-28">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          index="02"
+          index="03"
           eyebrow="Experience"
           title="Where I've"
           highlight="made impact"

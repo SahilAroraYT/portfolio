@@ -30,10 +30,10 @@ export default function Home() {
       <main className="relative flex-1">
         <Hero />
         <About />
+        <Education />
         <Experience />
         <Projects />
         <Skills />
-        <Education />
         <Contact />
       </main>
       <Footer />

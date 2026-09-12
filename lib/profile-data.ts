@@ -22,7 +22,7 @@ export type EducationEntry = {
   school: string;
   location: string;
   duration: string;
-  description: string;
+  score: string;
 };
 
 export type ProfileData = {
@@ -77,13 +77,34 @@ export const profile: ProfileData = {
 
   education: [
     {
-      degree: "BTech in Computer Science Engineering",
+      degree: "MTech in Computer Science & Engineering",
+      school: "Guru Nanak Dev Engineering College",
+      location: "Ludhiana, Punjab",
+      duration: "2026 - present",
+      score: "CGPA: —",
+    },
+    {
+      degree: "BTech in Computer Science & Engineering",
       school: "Guru Nanak Dev Engineering College",
       location: "Ludhiana, Punjab",
       duration: "2022 - 2026",
-      description:
-        "Core computer science fundamentals - data structures, algorithms, operating systems, database management system and software engineering.",
+      score: "CGPA: 8.26 / 10",
     },
+    {
+      degree: "Senior Secondary",
+      school: "Spring Dale Public School",
+      location: "Ludhiana, Punjab",
+      duration: "2022",
+      score: "Percentage: 92.8%",
+    },
+    {
+      degree: "Matriculation",
+      school: "Spring Dale Public School",
+      location: "Ludhiana, Punjab",
+      duration: "2020",
+      score: "Percentage: 91.6%",
+    },
+    
   ],
 
   experience: [
@@ -91,7 +112,7 @@ export const profile: ProfileData = {
       role: "Data Science Intern",
       company: "Sun Foundation",
       location: "Ludhiana, Punjab",
-      duration: "20XX — 20XX",
+      duration: "Jan 2026 - June 2026",
       current: false,
       description:
         "Applied machine learning and statistical analysis to real-world data problems.",
@@ -101,20 +122,7 @@ export const profile: ProfileData = {
         "Collaborated with mentors on data-driven projects",
       ],
     },
-    {
-      role: "Software Developer",
-      company: "Your Company Name",
-      location: "Remote / On-site",
-      duration: "20XX — Present",
-      current: true,
-      description:
-        "Developing and maintaining web applications with modern JavaScript technologies.",
-      highlights: [
-        "Built responsive, accessible interfaces with React and Next.js",
-        "Designed and consumed RESTful APIs with Node.js",
-        "Shipped features in cross-functional teams",
-      ],
-    },
+    
   ],
 
   projects: [

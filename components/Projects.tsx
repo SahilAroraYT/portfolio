@@ -10,7 +10,7 @@ export default function Projects() {
     <section id="projects" className="relative scroll-mt-24 py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          index="03"
+          index="04"
           eyebrow="Portfolio"
           title="Featured"
           highlight="projects"
