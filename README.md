@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sahil Arora — Portfolio
+
+A modern, dark-mode portfolio website with an AI assistant that answers questions about the owner — and **only** about the owner.
+
+Built with **Next.js 16**, **React 19**, **Tailwind CSS 4**, and the **Groq** free API.
+
+## Features
+
+- **Sections**: Hero, About, Experience, Projects, Skills, Education, Contact
+- **AI Chat:** floating chat widget (bottom-right) powered by Groq. The model is prompt-locked to only answer questions about Sahil — anything off-topic is refused.
+- Modern "aurora glass" design: near-black background, aurora gradient blobs, glassmorphism cards, Syne + Outfit typography
+- Dark mode only, responsive, mobile menu, reveal-on-scroll animations, spotlight project cards
+- Server-side API key (never exposed to the browser)
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Create your environment file and add a free Groq API key from <https://console.groq.com>:
+
+   ```bash
+   cp .env.local.example .env.local
+   # then edit .env.local and set GROQ_API_KEY=gsk_...
+   ```
+
+3. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000).
+
+## Customizing Content
+
+All personal data lives in one file: [lib/profile-data.ts](lib/profile-data.ts). Update it and both the website sections **and** the AI's knowledge base update automatically. Placeholders (dates, emails, social links, some copy) are intentionally marked — replace them with your real information.
+
+## Environment Variables
+
+| Variable       | Description                              |
+| -------------- | ---------------------------------------- |
+| `GROQ_API_KEY` | Required. Free key from console.groq.com |
+
+## AI Chat Behavior
+
+- Endpoint: `POST /api/chat` (see [app/api/chat/route.ts](app/api/chat/route.ts))
+- Model: `llama-3.1-8b-instant` on the Groq free tier
+- The system prompt instructs the model it is an AI assistant for Sahil Arora: answer questions about Sahil using the injected profile data, and politely refuse anything else.
+- If `GROQ_API_KEY` is missing, the API returns `500` and the chat shows a friendly error.
+
+## Scripts
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev      # development server
+npm run build    # production build
+npm run start    # serve production build
+npm run lint     # eslint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploy on Vercel (Free)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push this project to a GitHub repository.
+2. Go to <https://vercel.com/new> and import the repository.
+3. Under **Environment Variables**, add `GROQ_API_KEY`.
+4. Deploy. The Hobby (free) plan is enough — no domain purchase needed; Vercel gives you a free `*.vercel.app` URL.
