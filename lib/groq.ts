@@ -16,7 +16,12 @@ const profileContext = JSON.stringify(
     education: profile.education,
     experience: profile.experience,
     projects: profile.projects,
-    skills: profile.skills,
+    skills: Object.fromEntries(
+      Object.entries(profile.skills).map(([category, skills]) => [
+        category,
+        skills.map((skill) => skill.name),
+      ])
+    ),
     socials: profile.socials,
     extraFacts: profile.chatContextExtra,
   },

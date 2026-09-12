@@ -12,6 +12,7 @@ export type ProjectEntry = {
   name: string;
   description: string;
   tech: string[];
+  image?: string;
   link?: string;
   github?: string;
   featured?: boolean;
@@ -23,6 +24,11 @@ export type EducationEntry = {
   location: string;
   duration: string;
   score: string;
+};
+
+export type SkillEntry = {
+  name: string;
+  icon?: string;
 };
 
 export type ProfileData = {
@@ -43,7 +49,7 @@ export type ProfileData = {
   education: EducationEntry[];
   experience: ExperienceEntry[];
   projects: ProjectEntry[];
-  skills: Record<string, string[]>;
+  skills: Record<string, SkillEntry[]>;
   quickFacts: string[];
   chatContextExtra: string[];
 };
@@ -127,41 +133,77 @@ export const profile: ProfileData = {
 
   projects: [
     {
-      name: "Project Alpha",
+      name: "Smart Logistics System",
       description:
-        "A full-stack web application for tracking daily tasks with analytics and insight dashboards.",
-      tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-      github: "https://github.com/yourusername/project-alpha",
-      featured: true,
+        "An AI-powered delivery optimization platform. It predicts delivery failures, auto-assigns deliveries to agents, and generates optimized delivery routes with a live map, alerts, and audit logging.",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCN", "Leaflet", "Recharts", "Python", "FastAPI", "SQL Alchemy", "XGBoost", "scikit-learn", "Pandas", "Numpy", "PostgreSQL", "Supabase", "OSRM"],
+      image: "/smart_logistics_system.png",
+      github: "https://github.com/SahilAroraYT/Smart-Logistics-System",
+      link: "https://smartlogistics-system.vercel.app/",
     },
     {
-      name: "Project Beta",
+      name: "Vote Chain - Smart Voting System",
       description:
-        "A mobile-first personal finance app with expense tracking and budget planning.",
-      tech: ["React Native", "Node.js", "MongoDB"],
-      github: "https://github.com/yourusername/project-beta",
+        "Vote Chain is a blockchain-powered voting platform designed to ensure secure, transparent, and anonymous elections. It enables users to cast votes through a decentralized interface that generates instant blockchain receipts, providing verifiable proof of participation",
+      tech: ["Next.js", "JavaScript", "Solidity", "Blockchain", "Hard hat"],
+      github: "https://github.com/nirmt-124398/vote-chain",
     },
     {
-      name: "Project Gamma",
+      name: "Health Box",
       description:
-        "A data analysis tool that processes CSV datasets and generates interactive visualizations.",
-      tech: ["Python", "Pandas", "Flask"],
-      github: "https://github.com/yourusername/project-gamma",
+        "Health Box is an AI-powered healthcare application that provides personalized medical assistance through symptom analysis and disease prediction. The platform features a comprehensive diagnostic system that analyzes user-reported symptoms using machine learning algorithms and Google's Gemini AI to deliver accurate health assessments, personalized treatment recommendations, and emergency assistance capabilities. This innovative solution combines advanced technology with medical knowledge to make healthcare more accessible and efficient for users.",
+      tech: ["Python", "HTML/CSS", "Flask", "Tailwind CSS", "Material UI",  "SQLite", "SQL Alchemy", "NLTK", "OpenCV"],
+      github: "https://github.com/SahilAroraYT/HealthBox-real",
+      link: "https://healthbox-pbn4.onrender.com/",
+      image: "/health_box.png",
     },
   ],
 
   skills: {
-    "Frontend": [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "JavaScript",
+    "Frontend & UI": [
+      { name: "ReactJS", icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" },
+      { name: "NextJS", icon: "https://img.icons8.com/color/48/000000/nextjs.png" },
+      { name: "Redux", icon: "https://img.icons8.com/color/48/000000/redux.png" },
+      { name: "Tailwind CSS", icon: "https://img.icons8.com/color/48/000000/tailwindcss.png" },
+      { name: "Material UI", icon: "https://img.icons8.com/color/48/000000/material-ui.png" },
+      { name: "Chakra UI", icon: "https://img.icons8.com/color/48/000000/chakra-ui.png" },
+      { name: "Bootstrap", icon: "https://img.icons8.com/color/48/000000/bootstrap.png" },
+      { name: "HTML5", icon: "https://img.icons8.com/color/48/000000/html-5--v1.png" },
+      { name: "CSS3", icon: "https://img.icons8.com/color/48/000000/css3.png" },
+      { name: "JavaScript", icon: "https://img.icons8.com/color/48/000000/javascript--v1.png" },
+      { name: "TypeScript", icon: "https://img.icons8.com/color/48/000000/typescript.png" },
     ],
-    "Backend": ["Node.js", "Express", "REST APIs"],
-    "Data & AI": ["Python", "Pandas", "Machine Learning", "Data Analysis"],
-    "Databases": ["MongoDB", "PostgreSQL", "MySQL"],
-    "Tools": ["Git", "GitHub", "Docker", "Vercel"],
+    "Backend & APIs": [
+      { name: "NodeJS", icon: "https://img.icons8.com/color/48/000000/nodejs.png" },
+      { name: "ExpressJS", icon: "https://img.icons8.com/fluency/48/000000/express-js.png" },
+      { name: "Flask", icon: "https://img.icons8.com/ios/50/000000/flask.png" },
+      { name: "FastAPI", icon: "https://img.icons8.com/ios/50/000000/api.png" },
+      { name: "PHP", icon: "https://img.icons8.com/offices/48/000000/php-logo.png" },
+      { name: "SQL", icon: "https://img.icons8.com/fluency/48/000000/sql.png" },
+    ],
+    "Languages": [
+      { name: "Java", icon: "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png" },
+      { name: "C++", icon: "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" },
+      { name: "Python", icon: "https://img.icons8.com/color/48/000000/python--v1.png" },
+    ],
+    "Databases": [
+      { name: "MongoDB", icon: "https://img.icons8.com/color/48/000000/mongodb.png" },
+      { name: "PostgreSQL", icon: "https://img.icons8.com/color/48/000000/postgreesql.png" },
+    ],
+    "Cloud & DevOps": [
+      { name: "AWS", icon: "https://img.icons8.com/color/48/000000/amazon-web-services.png" },
+      { name: "Netlify", icon: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png" },
+      { name: "Docker", icon: "https://img.icons8.com/color/48/000000/docker.png" },
+      { name: "Podman", icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/podman.png" },
+    ],
+    "Data & AI": [
+      { name: "Machine Learning", icon: "https://img.icons8.com/fluency/48/000000/artificial-intelligence.png" },
+      { name: "Data Structures & Algorithms", icon: "https://img.icons8.com/color/48/000000/tree-structure.png" },
+    ],
+    "Platforms": [
+      { name: "Firebase", icon: "https://img.icons8.com/color/48/000000/firebase.png" },
+      { name: "Supabase", icon: "https://img.icons8.com/color/48/000000/supabase.png" },
+    ],
   },
 
   quickFacts: [

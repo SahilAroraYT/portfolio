@@ -1,11 +1,16 @@
-import { Code2, Sparkle } from "lucide-react";
-import { profile } from "@/lib/profile-data";
+import Image from "next/image";
+import { Code2, Wrench } from "lucide-react";
+import { profile, type SkillEntry } from "@/lib/profile-data";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 
-const marqueeSkills = (Object.values(profile.skills).flat() as string[]).filter(
-  (skill, index, array) => array.indexOf(skill) === index
-);
+const marqueeSkills: SkillEntry[] = [
+  ...new Map(
+    Object.values(profile.skills)
+      .flat()
+      .map((s) => [s.name, s])
+  ).values(),
+];
 
 const accentColors = [
   "from-cyan-400/25 to-blue-500/10",
@@ -37,11 +42,21 @@ export default function Skills() {
           <div className="animate-marquee flex w-max gap-3">
             {[...marqueeSkills, ...marqueeSkills].map((skill, index) => (
               <span
-                key={`${skill}-${index}`}
+                key={`${skill.name}-${index}`}
                 className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-slate-300"
               >
-                <Sparkle className="h-3.5 w-3.5 text-cyan-400" />
-                {skill}
+                {skill.icon ? (
+                  <Image
+                    src={skill.icon}
+                    alt=""
+                    width={16}
+                    height={16}
+                    className="h-4 w-4 rounded-sm object-contain"
+                  />
+                ) : (
+                  <Wrench className="h-3.5 w-3.5 text-cyan-400" />
+                )}
+                {skill.name}
               </span>
             ))}
           </div>
@@ -65,10 +80,21 @@ export default function Skills() {
                 <div className="mt-5 flex flex-wrap gap-2">
                   {skills.map((skill) => (
                     <span
-                      key={skill}
-                      className="rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-slate-300 transition-colors duration-200 hover:border-cyan-400/40 hover:text-cyan-300"
+                      key={skill.name}
+                      className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-slate-300 transition-colors duration-200 hover:border-cyan-400/40 hover:text-cyan-300"
                     >
-                      {skill}
+                      {skill.icon ? (
+                        <Image
+                          src={skill.icon}
+                          alt=""
+                          width={16}
+                          height={16}
+                          className="h-4 w-4 rounded-sm object-contain"
+                        />
+                      ) : (
+                        <Wrench className="h-3.5 w-3.5 text-cyan-400" />
+                      )}
+                      {skill.name}
                     </span>
                   ))}
                 </div>
