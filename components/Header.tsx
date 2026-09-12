@@ -58,7 +58,7 @@ export default function Header() {
           href="#top"
           className="font-display text-xl font-bold tracking-tight text-slate-50"
         >
-          Sahil<span className="text-gradient">.</span>Arora
+          {"< Sahil Arora />"}
         </a>
 
         <div className="hidden items-center gap-1 md:flex">
