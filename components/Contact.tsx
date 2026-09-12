@@ -43,7 +43,6 @@ export default function Contact() {
 
             <div className="relative">
               <div className="flex items-end justify-center gap-3">
-                <p className="font-mono text-sm text-cyan-300">06</p>
                 <h2 className="text-4xl font-extrabold tracking-tight text-slate-50 sm:text-5xl">
                   Let&apos;s build something
                   <span className="text-gradient block">great together</span>
